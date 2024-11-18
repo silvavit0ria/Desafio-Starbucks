@@ -4,6 +4,12 @@ import imagemgrande1 from '../../assets/images/imagemgrande1.png'
 import imagemgrande2 from '../../assets/images/imagemgrande2.png'
 import imagemgrande3 from '../../assets/images/imagemgrande3.png'
 import opcao1 from '../../assets/images/imagem1.1.png'
+import opcao2 from '../../assets/images/imagem2.2.png'
+import opcao3 from '../../assets/images/imagem3.3.png'
+import fb from '../../assets/images/fb.png'
+import tt from '../../assets/images/tt.png'
+import ig from '../../assets/images/ig.png'
+
 export default function Home() {
    const[TrocarSabor, setTrocarSabor] = useState(imagemgrande1);
    const [fundo, setFundo] = useState('#0F744B');
@@ -34,29 +40,29 @@ export default function Home() {
              
         </div>
         <div className="item-redes-home">
-            <img src="src\assets\images\fb.png" alt="logo facebook" id="fb"/>
-            <img src="src\assets\images\ig.png" alt="logo instagram" id="ig" />
-            <img src="src\assets\images\tt.png" alt="logo twitter"  id="tt"/>
+            <img  src={fb}  alt="logo facebook" id="fb"/>
+            <img  src={ig}  alt="logo instagram" id="ig" />
+            <img  src={tt}  alt="logo twitter"  id="tt"/>
 
         </div>
         <div className="item-opcao">
 
         <img 
-                src="src\assets\images\imagem1.1.png" 
+                src={opcao1} 
                 alt="Opção 1" 
                 id="imagem1" 
                 className="imagem1"
                 onClick={trocarImagem1} 
               />
        <img 
-                src={opcao1} 
+               src={opcao2} 
                 alt="Opção2" 
                 id="imagem2" 
                 className="imagem2"
                 onClick={trocarImagem2} 
               />
         <img 
-                src="src\assets\images\imagem3.3.png" 
+               src={opcao3} 
                 alt="Opção 3" 
                 id="imagem3" 
                 className="imagem3"

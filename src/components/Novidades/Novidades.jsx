@@ -1,9 +1,10 @@
 import { NovidadeStyled } from "./StyleNovidade";
+import imagempreparacao1 from '../../assets/images/imagem-preparacao.png'
 
 export default function Preparacao() {
     return (
         <NovidadeStyled>
-          <img src="src\assets\images\imagem-preparacao.png" alt="" />
+          <img src={imagempreparacao1} alt="" />
           <div className="info-novidade">
             <p className="info-p">PREPARAÇÃO</p>
                 <h2>Níveis de torra</h2>
