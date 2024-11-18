@@ -3,6 +3,7 @@ import { HomeStyled } from "./StyleHome";
 import imagemgrande1 from '../../assets/images/imagemgrande1.png'
 import imagemgrande2 from '../../assets/images/imagemgrande2.png'
 import imagemgrande3 from '../../assets/images/imagemgrande3.png'
+import opcao1 from '../../assets/images/imagem1.1.png'
 export default function Home() {
    const[TrocarSabor, setTrocarSabor] = useState(imagemgrande1);
    const [fundo, setFundo] = useState('#0F744B');
@@ -48,7 +49,7 @@ export default function Home() {
                 onClick={trocarImagem1} 
               />
        <img 
-                src="src\assets\images\imagem2.2.png" 
+                src={opcao1} 
                 alt="Opção2" 
                 id="imagem2" 
                 className="imagem2"
