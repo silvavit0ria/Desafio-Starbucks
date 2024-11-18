@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { HeaderStyled } from "./StyleHeader";
+import logomarca from '../../assets/images/logo.png'
 
 export default function Header() {
   return (
     <HeaderStyled>
-      <img src="src\assets\images\logo 1 (1).png" alt="logomarca" />
+      <img src={logomarca} alt="logomarca" />
       <nav>
         <ul>
           <li>

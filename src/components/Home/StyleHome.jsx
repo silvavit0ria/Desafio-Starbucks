@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const HomeStyled = styled.main`
 display: flex;
 
@@ -70,13 +71,13 @@ button{
     }
 }
 #imagem1:hover{
-    content: url("/src/assets/images/imagem1.png");
+    content: url("https://github.com/silvavit0ria/Desafio-Starbucks/blob/main/src/assets/images/imagem1.png?raw=true");
 }
 #imagem2:hover{
-    content: url("/src/assets/images/imagem2.png");
+    content: url("https://github.com/silvavit0ria/Desafio-Starbucks/blob/main/src/assets/images/imagem2.png?raw=true");
 }
 #imagem3:hover{
-    content: url("/src/assets/images/imagem3.png");
+    content: url("https://github.com/silvavit0ria/Desafio-Starbucks/blob/main/src/assets/images/imagem3.png?raw=true");
 }
    
 .item-redes-home{
