@@ -13,6 +13,7 @@ import ig from '../../assets/images/ig.png'
 export default function Home() {
    const[TrocarSabor, setTrocarSabor] = useState(imagemgrande1);
    const [fundo, setFundo] = useState('#0F744B');
+   const [mensagem, setMensagem]=useState("");
    const trocarImagem1 =()=>{
     setTrocarSabor(imagemgrande1);
     setFundo('#0F744B');
@@ -26,13 +27,18 @@ export default function Home() {
     setFundo('#870C0B');
    
    }
+   const mensagemAlerta=()=>{
+    const alerta ="Estamos trabalhando para melhorar sua experiência. O site estará de volta em breve!";
+    setMensagem(alerta);
+    alert(alerta)
+   }
     return (
         <HomeStyled>
            <div className="intro-home">
             <h1>Mais que Café </h1>
             <p className="subtexto-home">Isso  é <strong>Starbucks</strong></p>
             <p className="descricao-home">A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
-            <button>SAIBA MAIS</button>
+            <button onClick={mensagemAlerta}>SAIBA MAIS</button>
         </div> 
         <div className="item-home" style={{ backgroundColor: fundo }}>
             <img src={TrocarSabor} 

@@ -43,6 +43,7 @@ button{
     color:white;
     font-family: "Inter", serif;
     font-weight: 500;
+    cursor: pointer;
     &:hover{
         background-color: #075534;
     }
